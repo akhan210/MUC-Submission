@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#1a9bcb">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:text=" RoadWork Info"
+        android:layout_marginBottom="19sp"
+        android:layout_marginTop="19sp"
+        android:id="@+id/txtinfo"
+        android:layout_column="3" />
+    <TableLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19sp"
+        android:textSize="6pt"
+        android:text="   Road Name :"
+        android:id="@+id/txtname" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="6pt"
+        android:text=""
+        android:id="@+id/txttitle" />
+
+
+</TableRow>
+    <TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="6pt"
+        android:text="Location Coords :"
+        android:layout_marginLeft="19sp"
+        android:id="@+id/txtlocation"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="6pt"
+        android:text=""
+        android:id="@+id/txtpos" />
+</TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="6pt"
+                android:text="Description :"
+
+                android:id="@+id/txtdesc"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="6pt"
+                android:layout_weight="3"
+                android:text=""
+                android:layout_marginBottom="9sp"
+                android:id="@+id/txtdescription" />
+        </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:text="Distance in Miles : "
+                    android:layout_marginTop="9sp"
+                    android:layout_marginBottom="9sp"
+                    android:id="@+id/txtdistancemiles" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:layout_weight="3"
+                    android:text=""
+                   android:layout_marginTop="9sp"
+                    android:layout_marginBottom="9sp"
+                    android:id="@+id/txtdistance" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Get Distance"
+                    android:layout_marginBottom="9sp"
+                    android:id="@+id/btndistance"
+
+                    android:paddingTop="5dp"
+
+                    />
+
+            </TableRow>
+
+
+    </TableLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.google.android.gms.maps.MapFragment"
+    android:id="@+id/gmap" />
+</LinearLayout>

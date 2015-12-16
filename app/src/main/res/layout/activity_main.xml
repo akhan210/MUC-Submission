@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="#1a9bcb">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Traffic Scotland"
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Road Works"
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:id="@+id/Roadworkssign"
+        android:src="@drawable/roadworkssign"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="See all RoadWorks"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:id="@+id/btnsee"
+
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Search roads"
+        android:id="@+id/btnsearch"
+        android:layout_marginTop="19dp"
+        android:paddingTop="5dp"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="See Whats On Canvas??"
+        android:id="@+id/btncanvas"
+        android:layout_marginTop="19dp"
+        android:paddingTop="5dp"
+
+        />
+
+</LinearLayout>
